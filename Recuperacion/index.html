@@ -1,0 +1,235 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <title>tienda.html</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: auto;
+      text-align: center
+    }
+
+    #cabecera {
+      background-color: #fff0f0;
+    }
+
+    h1 {
+      font: bold 1.5em arial;
+      padding: 0.5em;
+    }
+
+    #navegador {
+      background-color: #663366;
+      padding: 0.5em;
+    }
+
+    #navegador li {
+      margin: 0px 5px;
+      padding: 0.1em 1em 0.5em 1em;
+      background-color: #121113;
+      width: 12%;
+      float: left;
+      list-style-type: none;
+      position: relative;
+    }
+
+    #subseccion1,
+    #subseccion2,
+    #subseccion3,
+    #subseccion4,
+    #subseccion5,
+    #subseccion6,
+    #subseccion7 {
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      background-color: #41338b;
+      font: normal 0.8em arial;
+      padding: 0.2em 0.5em;
+      display: none;
+    }
+
+    #navegador li:hover {
+      background-color: #990033;
+    }
+
+    #navegador li a:link,
+    #navegador li a:visited {
+      color: #8b8f22;
+      text-decoration: none;
+    }
+
+    #navegador li a:hover,
+    #navegador li a:active {
+      color: #ffd7a9;
+      text-decoration: none;
+    }
+
+    .borrar {
+      clear: both;
+    }
+
+    #principal h2 {
+      font: bold 1.5em arial;
+      padding: 0.5em
+    }
+
+    #principal p {
+      font: normal 0.9em arial;
+      text-align: justify;
+      text-indent: 3em;
+      padding: 0.5em 2em;
+    }
+    .cuadro {
+        border: 2px solid #0a0909;
+        background-color: #61540c;
+        padding: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+  </style>
+  <script type="text/javascript">
+    function ver(n) {
+      document.getElementById("subseccion" + n).style.display = "block"
+    }
+    function ocultar(n) {
+      document.getElementById("subseccion" + n).style.display = "none"
+    }
+  </script>
+</head>
+
+<body>
+  <div id="cabecera">
+    <h1>Tienda de Artefactos Tecnologicos</h1>
+  </div>
+  <div id="navegador">
+    <ul>
+      <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+        <a href="#">Laptop</a>
+        <div id="subseccion1">
+          <p><a href="https://www.infotec.com.pe/"> Asus</a></p>
+          <p><a href="https://www.infotec.com.pe/"> Hp</a></p>
+          <p><a href="https://www.infotec.com.pe/"> Lenovo</a></p>
+          <p><a href="https://www.infotec.com.pe/"> Dell</a></p>
+          <p><a href="https://www.infotec.com.pe/"> Acer</a></p>
+        </div>
+      </li>
+      <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
+        <a href="#">Laptop Gamers</a>
+        <div id="subseccion2">
+          <p><a href="https://www.infotec.com.pe/"> Asus</a></p>
+          <p><a href="https://www.infotec.com.pe/"> Hp</a></p>
+          <p><a href="https://www.infotec.com.pe/"> Lenovo</a></p>
+          <p><a href="https://www.infotec.com.pe/"> Dell</a></p>
+          <p><a href="https://www.infotec.com.pe/"> Acer</a></p>
+        </div>
+        
+      </li>
+      <li id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)">
+        <a href="#">Computadoras</a>
+        <div id="subseccion3">
+            <p><a href="https://www.compualtoque.com/">AMD Series</a></p>
+            <p><a href="https://www.compualtoque.com/">Intel Series</a></p>
+            <p><a href="https://www.compualtoque.com/">Intel</a></p>
+            <p><a href="https://www.compualtoque.com/">AMD</a></p>
+            <p><a href="https://www.compualtoque.com/">HP</a></p>
+            <p><a href="https://www.compualtoque.com/">Lenovo</a></p>
+            <p><a href="https://www.compualtoque.com/">Dell</a></p>
+            <p><a href="https://www.compualtoque.com/">Asrock</a></p>
+        </div>
+    </li>
+    
+    <li id="seccion4" onmouseover="ver(4)" onmouseout="ocultar(4)">
+        <a href="#">Zona Gamer</a>
+        <div id="subseccion4">
+            <p><a href="https://cuscogo.com/">Juegos populares para PC</a></p>
+            <p><a href="https://cuscogo.com/">Accesorios para gamers</a></p>
+            <p><a href="https://cuscogo.com/">Hardware especializado para gaming</a></p>
+        </div>
+    </li>
+    <li id="seccion5" onmouseover="ver(5)" onmouseout="ocultar(5)">
+        <a href="#">Partes de PC</a>
+        <div id="subseccion5">
+            <p><a href="https://www.coolbox.pe/pc-cool?gad_source=1&gclid=CjwKCAjwoPOwBhAeEiwAJuXRhyqFqP0p9EiY93hNjtfF7KVktIFFAoXIAJaWHgo4SLFxS0uBywlKUhoCjOEQAvD_BwE">Procesadores</a></p>
+            <p><a href="https://www.coolbox.pe/pc-cool?gad_source=1&gclid=CjwKCAjwoPOwBhAeEiwAJuXRhyqFqP0p9EiY93hNjtfF7KVktIFFAoXIAJaWHgo4SLFxS0uBywlKUhoCjOEQAvD_BwE">Tarjetas gráficas</a></p>
+            <p><a href="https://www.coolbox.pe/pc-cool?gad_source=1&gclid=CjwKCAjwoPOwBhAeEiwAJuXRhyqFqP0p9EiY93hNjtfF7KVktIFFAoXIAJaWHgo4SLFxS0uBywlKUhoCjOEQAvD_BwE">Memoria RAM</a></p>
+            <p><a href="https://www.coolbox.pe/pc-cool?gad_source=1&gclid=CjwKCAjwoPOwBhAeEiwAJuXRhyqFqP0p9EiY93hNjtfF7KVktIFFAoXIAJaWHgo4SLFxS0uBywlKUhoCjOEQAvD_BwE">Discos duros</a></p>
+            <p><a href="https://compuvisionperu.pe/CYM/">SSD (Unidades de estado sólido)</a></p>
+            <p><a href="https://www.coolbox.pe/pc-cool?gad_source=1&gclid=CjwKCAjwoPOwBhAeEiwAJuXRhyqFqP0p9EiY93hNjtfF7KVktIFFAoXIAJaWHgo4SLFxS0uBywlKUhoCjOEQAvD_BwE">Placas base</a></p>
+            <p><a href="https://compuvisionperu.pe/CYM/">Fuentes de alimentación</a></p>
+            <p><a href="https://compuvisionperu.pe/CYM/">Enfriamiento (ventiladores, disipadores térmicos, etc.)</a></p>
+            <p><a href="https://www.coolbox.pe/pc-cool?gad_source=1&gclid=CjwKCAjwoPOwBhAeEiwAJuXRhyqFqP0p9EiY93hNjtfF7KVktIFFAoXIAJaWHgo4SLFxS0uBywlKUhoCjOEQAvD_BwE">Cajas/torres de PC</a></p>
+            <p><a href="https://compuvisionperu.pe/CYM/">Periféricos (teclados, ratones, monitores, etc.)</a></p>
+            <p><a href="https://compuvisionperu.pe/CYM/">Tarjetas de sonido</a></p>
+            <p><a href="https://compuvisionperu.pe/CYM/">Tarjetas de red</a></p>
+            <p><a href="https://compuvisionperu.pe/CYM/">Tarjetas de captura</a></p>
+            <p><a href="https://compuvisionperu.pe/CYM/">Unidades ópticas (lectores de CD/DVD/Blu-ray)</a></p>
+            <p><a href="https://compuvisionperu.pe/CYM/">Cables y conectores</a></p>
+        </div>
+    </li>
+    
+    <li id="seccion6" onmouseover="ver(6)" onmouseout="ocultar(6)">
+        <a href="#">Monitores</a>
+        <div id="subseccion6">
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Monitores curvos</a></p>
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Monitores ultrawide</a></p>
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Monitores 4K</a></p>
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Monitores gaming</a></p>
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Monitores táctiles</a></p>
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Monitores profesionales (para diseño, fotografía, etc.)</a></p>
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Monitores HDR</a></p>
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Monitores portátiles</a></p>
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Soportes y bases para monitores</a></p>
+            <p><a href="https://www.tiendastec.com/categoria-producto/monitor/">Accesorios para monitores (filtros de privacidad, calibradores de color, etc.)</a></p>
+        </div>
+    </li>
+    
+    <li id="seccion7" onmouseover="ver(7)" onmouseout="ocultar(7)">
+        <a href="#">Proyectores</a>
+        <div id="subseccion7">
+            <p><a href="https://www.oechsle.pe/tecnologia/computo/proyectores">Proyectores de corto alcance</a></p>
+            <p><a href="https://www.oechsle.pe/tecnologia/computo/proyectores">Proyectores de largo alcance</a></p>
+            <p><a href="https://www.oechsle.pe/tecnologia/computo/proyectores">Proyectores de ultra corto alcance</a></p>
+        </div>
+    </li>
+    
+    </ul>
+    <div class="borrar"></div>
+  </div>
+  <div id="principal">
+    <h2>Productos destacados</h2>
+    <div class="cuadro">
+        <div class="producto">
+            <img src="1.jpg" alt="Producto 1">
+            <img src="4.jpg" alt="Producto 2">
+            <img src="5.jpg" alt="Producto 3">
+            <h3>Computadora portátil</h3>
+            <p>Potente computadora portátil con procesador Intel Core i7 y pantalla Full HD.</p>
+            <a href="#">Ver más</a>
+        </div>
+    </div>
+    <div class="cuadro">
+        <div class="producto">
+            <img src="2.jpg" alt="Producto 4">
+            <h3>Smartphone</h3>
+            <p>Último modelo de smartphone con cámara de alta resolución y pantalla AMOLED.</p>
+            <a href="#">Ver más</a>
+        </div>
+    </div>
+    <div class="cuadro">
+        <div class="producto">
+            <img src="3.jpg" alt="Producto 5">
+            <h3>Proyector de cine en casa</h3>
+            <p>Proyector de alta calidad para disfrutar de películas en casa con una experiencia de cine.</p>
+            <a href="#">Ver más</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+
+</html>
